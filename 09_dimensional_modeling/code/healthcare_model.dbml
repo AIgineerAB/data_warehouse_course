@@ -1,0 +1,47 @@
+Table fct_healthcare {
+  fct_healthcare_id INTEGER [primary key]
+  date_id INTEGER [ref: > dim_date.date_id]
+  patient_id INTEGER [ref: > dim_patient.patient_id]
+  doctor_id INTEGER [ref: > dim_doctor.doctor_id]
+  hospital_id INTEGER [ref: > dim_hospital.hospital_id]
+  diagnosis_code VARCHAR(30) [not null]
+  treatment_cost DECIMAL(10,2) [not null]
+}
+
+Table dim_date {
+  date_id INTEGER [primary key]
+  date DATE [not null]
+  full_date_description VARCHAR(20) [not null]
+  day_of_month NUMBER(2,0) [not null]
+  day_name VARCHAR(10) [not null]
+  day_of_week NUMBER(1,0) [not null]
+  month NUMBER(2,0) [not null]
+  month_name VARCHAR(10) [not null]
+  month_year VARCHAR(20) [not null]
+  year NUMBER(4,0) [not null]
+  is_weekend VARCHAR(3) [not null]
+  is_holiday VARCHAR(3) [not null]
+  holiday_name VARCHAR(20) [not null]
+}
+
+Table dim_patient {
+  patient_id INTEGER [primary key]
+  patient_name VARCHAR(50) [not null]
+  age NUMBER(3,0) [not null]
+  gender VARCHAR(10) [not null]
+  // ...
+}
+
+Table dim_doctor {
+  doctor_id INTEGER [primary key]
+  doctor_name VARCHAR(50) [not null]
+  specialization VARCHAR(50) [not null]
+  // ...
+}
+
+Table dim_hospital {
+  hospital_id INTEGER [primary key]
+  hospital_name VARCHAR(50) [not null]
+  location VARCHAR(100) [not null]
+  // ...
+}

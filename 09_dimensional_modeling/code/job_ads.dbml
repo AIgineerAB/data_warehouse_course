@@ -1,0 +1,50 @@
+// snowflake uses dynamical storage, so in terms of performance
+// and memory, snowflake only stores the actual length of the data
+// however if choosing varchar(11) for example, we add an extra layer
+// of validation that the length of the data stored is 11 or less characters
+
+Table fct_job_ads {
+  job_id INTEGER [primary key]
+  job_details_id INTEGER [ref: >dim_job_details.job_details_id]
+  employer_id INTEGER [ref: >dim_employer.employer_id]
+  auxilliary_attributes_id INTEGER [ref: >dim_auxilliary_attributes.auxilliary_attributes_id]
+  number_vacancies INTEGER [not null]
+  relevance FLOAT [not null]
+  application_deadline DATETIME [not null]
+}
+
+Table dim_job_details {
+  job_details_id INTEGER [primary key]
+  headline STRING [not null]
+  description STRING [not null]
+  description_html_formatted STRING [not null]
+  employment_type STRING [not null]
+  duration STRING [not null]
+  salary_type STRING [not null]
+  scope_of_work_min NUMBER(3,0) [not null]
+  scope_of_work_max NUMBER(3,0) [not null]
+}
+
+
+Table dim_employer {
+  employer_id INTEGER [primary key]
+  employer_name STRING [not null]
+  employer_workplace STRING [not null]
+  // we know organization number is xxxxxx-xxxx
+  employer_organization_number STRING [not null] 
+  workplace_street_address STRING [not null]
+  workplace_region STRING [not null]
+  workplace_postcode STRING [not null]
+  workplace_city STRING [not null]
+  workplace_country STRING [not null]
+}
+
+
+
+// junk dimension for cols with flags 
+Table dim_auxilliary_attributes {
+  auxilliary_attributes_id INTEGER [primary key]
+  experience_required VARCHAR(30) [not null]
+  driver_license VARCHAR(30) [not null]
+  access_to_own_car VARCHAR(30) [not null]
+}

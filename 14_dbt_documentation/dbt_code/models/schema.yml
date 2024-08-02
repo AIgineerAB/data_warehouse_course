@@ -1,0 +1,64 @@
+models:
+  - name: dim_employer
+    description: "Information about the employer such as name, workplace address, organisation number, ..."
+    columns:
+      - name: employer_id
+        description: "Primary key, a surrogate key generated based on the columns id, employer_name."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: workplace_city
+        data_tests:
+          - not_null
+
+        # TODO: add more tests ...
+
+  - name: dim_job_details
+    description: "Details about the job ad"
+    columns:
+      - name: job_details_id
+        data_tests:
+          - not_null
+          - unique
+      - name: headline
+        data_tests:
+          - not_null
+
+        # TODO: add more tests ...
+
+  - name: fct_job_ads
+    description: "The facts are relevance and vacancies."
+    columns:
+      - name: job_details_key
+        data_tests:
+          - relationships:
+              to: ref('dim_job_details')
+              field: job_details_id
+      - name: relevance
+        data_tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0  
+              max_value: 1 
+
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: float
+      - name: vacancies
+        data_tests: 
+          - dbt_expectations.expect_column_quantile_values_to_be_between:
+              quantile: .99
+              min_value: 1
+              max_value: 20
+          
+          - dbt_expectations.expect_column_max_to_be_between:
+              min_value: 1
+              max_value: 20
+              config:
+                severity: warn
+
+          - dbt_expectations.expect_column_values_to_be_of_type:
+              column_type: number
+            
+
+          
+   # TODO: more tests ...

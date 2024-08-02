@@ -1,0 +1,12 @@
+sources:
+    - name: job_ads
+      schema: staging
+      tables: 
+        - name: stg_data_ads
+          identifier: data_field_job_ads
+          columns: 
+            - name: employer__organization_number
+              data_tests:
+                - dbt_expectations.expect_column_values_to_match_regex:
+                    regex: '^\\d{10}$'
+    
