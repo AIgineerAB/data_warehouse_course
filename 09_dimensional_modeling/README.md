@@ -1,11 +1,11 @@
 # Dimensional modeling
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
+Video on dimensional modeling theory :point_down:
 
-[![alt](https://)](https://youtu.be/C7ysqi_tZio)
+[![dimensional modeling](https://github.com/kokchun/assets/blob/main/data_warehouse/dimensional_modeling_video.png?raw=true)](https://youtu.be/C7ysqi_tZio)
 
-> [!IMPORTANT]
-> [LINK TO VIDEO &nbsp; :video_camera:](https://)
+Video on the data marts layer for serving data :point_down:
+[![data marts layer](https://github.com/kokchun/assets/blob/main/data_warehouse/mart_layer_video.png?raw=true)](https://youtu.be/XmNUuzY9OHQ)
 
 
 Read [dlthub documentation for loading data from API](https://dlthub.com/devel/tutorial/load-data-from-an-api). 
