@@ -1,10 +1,7 @@
 # Users and roles
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
-
-
-> [!IMPORTANT]
-> [LINK TO VIDEO &nbsp; :video_camera:](https://)
+Video on snowflake users and roles theory :point_down:
+[![example of access control](https://github.com/kokchun/assets/blob/main/data_warehouse/access_control_video.png?raw=true)](https://youtu.be/NZlaNhDUqOE)
 
 
 The content is based on the documentation on [access control.](https://docs.snowflake.com/en/user-guide/security-access-control-overview)
