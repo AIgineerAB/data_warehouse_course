@@ -1,8 +1,8 @@
 # Setup data load tool (dlt)
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
+Video on dlt theory :point_down:
 
-[![theory on dlt](https://)](https://youtu.be/m4zrj5ZUWs4)
+[![theory on dlt](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_intro_video.png?raw=true)](https://youtu.be/m4zrj5ZUWs4)
 
 This setup requires that you have the following prerequisites already setup
 - python

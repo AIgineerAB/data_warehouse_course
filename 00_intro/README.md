@@ -1,5 +1,7 @@
 # Introduction to data warehouse
 
+Video on data warehouse intro :point_down:
+
 [![dwh_video_intro](https://github.com/kokchun/assets/blob/main/data_warehouse/intro_video.png?raw=true)](https://youtu.be/x9AyMOVAtV4)
 
 This section gives a background that leads to the need for a data warehouse and an introduction to what a data warehouse and its lifecycle is.

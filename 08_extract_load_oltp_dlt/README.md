@@ -1,9 +1,9 @@
 # Extract and load from SQL database to snowflake with dlt
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
+Video on dlt theory to extract and load from OLTP database to snowflake :point_down:
 
-> [!IMPORTANT] > [LINK TO VIDEO &nbsp; :video_camera:](https://)
-> 
+[![dlt to extract and load from oltp to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_intro_video.png?raw=true)](https://youtu.be/gfzlxJHfFtA)
+
 ## Setup
 
 We will setup postgres and copy in some data, and then we'll setup dlt to load the data into snowflake.
