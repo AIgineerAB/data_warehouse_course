@@ -2,8 +2,14 @@
 
 <!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
 
+Video on snowflake theory :point_down:
 
-[what is snowflake](https://youtu.be/KkmrVSbMap8)
+[![hierarchy of snowflake securable objects](https://github.com/kokchun/assets/blob/main/data_warehouse/snowflake_theory_video_objects.png?raw=true)](https://youtu.be/KkmrVSbMap8)
+
+Video on creating virtual warehouse :point_down:
+
+[![creating virtual warehouse](https://github.com/kokchun/assets/blob/main/data_warehouse/snowflake_virtual_warehouse_video.png?raw=true)](https://www.youtube.com/watch?v=fhwdKmp_7S8)
+
 
 In this lecture we cover the following topics 
 
