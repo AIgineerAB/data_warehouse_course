@@ -1,8 +1,6 @@
 # dbt transformations
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
-
-> [!IMPORTANT] > [LINK TO VIDEO &nbsp; :video_camera:](https://)
+[![developing in dbt](https://)](https://youtu.be/PnSL_CPWKxI)
 
 Based on our previous dimensional models on the job ads we'll transform the data from staging layer to the warehouse layer. This will be our source of truth, that later will serve the data marts layer, which then in turn serves BI dashboards. We will base our modeling on the ER diagram of a star schema created in `dimension_modeling` lecture.
 
