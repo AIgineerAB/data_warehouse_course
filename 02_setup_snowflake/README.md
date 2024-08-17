@@ -2,7 +2,9 @@
 
 <!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
 
-> [!IMPORTANT] > [LINK TO VIDEO &nbsp; :video_camera:](https://)
+[![setup snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_snowflake_video.png?raw=true)]()
+
+# TODO link
 
 This setup requires that you have the following prerequisites already setup
 

@@ -2,9 +2,8 @@
 
 <!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
 
-> [!IMPORTANT]
-> [LINK TO VIDEO &nbsp; :video_camera:](https://)
 
+[what is snowflake](https://youtu.be/KkmrVSbMap8)
 
 In this lecture we cover the following topics 
 
