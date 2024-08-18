@@ -4,6 +4,17 @@ Video on dlt theory :point_down:
 
 [![theory on dlt](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_intro_video.png?raw=true)](https://youtu.be/m4zrj5ZUWs4)
 
+Video on dlt setup part 1 :point_down:
+[![setup dlt part 1](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dlt_1.png?raw=true)](https://youtu.be/u4map_3j9LA)
+
+Video on dlt setup part 2 - setting up roles and user in snowflake :point_down:
+[![setup dlt part 2](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dlt_2.png?raw=true)](https://youtu.be/NdM4iYw37B8)
+
+Video on dlt setup part 3 - loading csv file to snowflake :point_down:
+[![setup dlt part 3](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dlt_3.png?raw=true)](https://youtu.be/KOn6XRDrT8s)
+
+
+
 This setup requires that you have the following prerequisites already setup
 - python
 - pip 

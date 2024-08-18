@@ -1,6 +1,11 @@
 # Course structure
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
+Video on the course structure part 1 :point_down:
+
+[![course structure part 1]()](https://youtu.be/dzI71WhlOpU)
+
+[![course structure part 2]()](https://youtu.be/D_JY1dkljSs)
+
 
 All course material can be found in this github repository. The course material is described in this table
 
