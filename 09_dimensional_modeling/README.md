@@ -11,7 +11,7 @@ Video on dimensional modeling and building a star schema in dbdiagram :point_dow
 [![star schema healthcare example](https://github.com/kokchun/assets/blob/main/data_warehouse/dimensional_model_hospital_video.png?raw=true)](https://youtu.be/xJFyZCtdXaQ)
 
 Video on dimensional modeling for the job ads :point_down:
-[![dimensional model of job ads]()]()
+[![dimensional model of job ads](https://github.com/kokchun/assets/blob/main/data_warehouse/jobtech_dimensional_model.png?raw=true)](https://youtu.be/E88-G-uDxnQ)
 
 
 
