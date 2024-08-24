@@ -7,6 +7,12 @@ Video on dlt theory to extract and load from API to snowflake :point_down:
 Video on EDA of jobtech API :point_down:
 [![EDA on jobtech API]()](https://youtu.be/HB6Y8eMQ8w0)
 
+Video on roles, user and database setup for jobtech :point_down:
+[![roles, user and database setup]()](https://www.youtube.com/watch?v=EfN1PrpUPyM)
+
+Video on extract and loading data from jobtech API to snowflake with dlt :point_down:
+[![extract and load data from dlt to snowflake]()](https://www.youtube.com/watch?v=PEmcikWd93o)
+
 
 
 Read [dlthub documentation for loading data from API](https://dlthub.com/devel/tutorial/load-data-from-an-api). 
