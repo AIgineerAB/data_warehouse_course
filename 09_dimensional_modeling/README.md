@@ -7,6 +7,12 @@ Video on dimensional modeling theory :point_down:
 Video on the data marts layer for serving data :point_down:
 [![data marts layer](https://github.com/kokchun/assets/blob/main/data_warehouse/mart_layer_video.png?raw=true)](https://youtu.be/XmNUuzY9OHQ)
 
+Video on dimensional modeling and building a star schema in dbdiagram :point_down:
+[![star schema healthcare example]()](https://youtu.be/xJFyZCtdXaQ)
+
+Video on dimensional modeling for the job ads :point_down:
+[![dimensional model of job ads]()]()
+
 
 
 Start by setting up a [free account in dbdiagram](https://dbdiagram.io/home). We will use dbdiagram to do data modeling and more specifically dimensional modeling. 
