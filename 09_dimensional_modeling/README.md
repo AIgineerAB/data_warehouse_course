@@ -9,7 +9,7 @@ Video on the data marts layer for serving data :point_down:
 
 
 
-- setup [free account in dbdiagram](https://dbdiagram.io/home) for data modeling
+Start by setting up a [free account in dbdiagram](https://dbdiagram.io/home). We will use dbdiagram to do data modeling and more specifically dimensional modeling. 
 
 If you want to work with the diagrams offline in vscode download these extensions
 - dbml renderer vscode extension to view data model in vscode
