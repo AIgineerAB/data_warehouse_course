@@ -4,6 +4,11 @@ Video on dlt theory to extract and load from API to snowflake :point_down:
 
 [![dlt to extract and load from api to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_api_video.png?raw=true)](https://youtu.be/eohHTUU0RII)
 
+Video on EDA of jobtech API :point_down:
+[![EDA on jobtech API]()](https://youtu.be/HB6Y8eMQ8w0)
+
+
+
 Read [dlthub documentation for loading data from API](https://dlthub.com/devel/tutorial/load-data-from-an-api). 
 
 > [!NOTE]
@@ -33,7 +38,7 @@ role = "ACCOUNTADMIN" # please set me up!
 
 ## Arbetsförmedlingen
 
-We will be using an API to get ads published in arbetsförmedlingen/platsbanken. Go into [this code examples repository](https://gitlab.com/arbetsformedlingen/job-ads/getting-started-code-examples/code-examples-start-here) to read documentation. 
+We will be using jobtech API to get ads published in arbetsförmedlingen/platsbanken. Go into [this code examples repository](https://gitlab.com/arbetsformedlingen/job-ads/getting-started-code-examples/code-examples-start-here) to read documentation. 
 
 
 
