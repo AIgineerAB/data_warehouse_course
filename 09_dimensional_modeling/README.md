@@ -8,10 +8,6 @@ Video on the data marts layer for serving data :point_down:
 [![data marts layer](https://github.com/kokchun/assets/blob/main/data_warehouse/mart_layer_video.png?raw=true)](https://youtu.be/XmNUuzY9OHQ)
 
 
-Read [dlthub documentation for loading data from API](https://dlthub.com/devel/tutorial/load-data-from-an-api). 
-
-> [!NOTE]
-> We will only do simple loading from API and won't go through incremental loading and pagination. Also we won't use API which requires a secret in the lecture, but there will be an exercise on it.
 
 - setup [free account in dbdiagram](https://dbdiagram.io/home) for data modeling
 
