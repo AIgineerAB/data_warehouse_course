@@ -8,7 +8,7 @@ Video on the data marts layer for serving data :point_down:
 [![data marts layer](https://github.com/kokchun/assets/blob/main/data_warehouse/mart_layer_video.png?raw=true)](https://youtu.be/XmNUuzY9OHQ)
 
 Video on dimensional modeling and building a star schema in dbdiagram :point_down:
-[![star schema healthcare example]()](https://youtu.be/xJFyZCtdXaQ)
+[![star schema healthcare example](https://github.com/kokchun/assets/blob/main/data_warehouse/dimensional_model_hospital_video.png?raw=true)](https://youtu.be/xJFyZCtdXaQ)
 
 Video on dimensional modeling for the job ads :point_down:
 [![dimensional model of job ads]()]()
