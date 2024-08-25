@@ -12,8 +12,6 @@ GRANT ROLE job_ads_dlt_role TO ROLE job_ads_dbt_role;
 
 SHOW GRANTS TO ROLE job_ads_dbt_role;
 
-USE ROLE job_ads_dbt_role;
-
 GRANT USAGE,
 CREATE TABLE,
 CREATE VIEW ON SCHEMA job_ads.warehouse TO ROLE job_ads_dbt_role;
