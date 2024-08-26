@@ -1,8 +1,13 @@
 # Modeling and transformations in warehouse layer
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
+Video on what is dbt :point_down: 
+[![what is dbt?]()](https://youtu.be/mMJKWOg3nS4)
 
-> [!IMPORTANT] > [LINK TO VIDEO &nbsp; :video_camera:](https://)
+Video on setup role and user in snowflake for dbt :point_down: 
+[![setup dbt part 1 roles]()](https://youtu.be/V2CEc9tCHxM)
+
+Video on setup dbt in vscode :point_down: 
+[![setup dbt part 2 vscode]()](https://youtu.be/IUMdhf_vsMs)
 
 ## Setup user and role
 
