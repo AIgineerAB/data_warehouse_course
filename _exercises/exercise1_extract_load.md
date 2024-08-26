@@ -5,9 +5,9 @@ In this exercise, you get to familiarize yourself with snowflake roles, extracti
 > [!NOTE]
 > These exercises covers lectures 05-08.
 
-## 0. Ice cream analyst
+## 0. Movie analyst
 
-In the lecture `setup_dlt` we setup a reader and writer role and also an analyst role for the ice_cream_db. However we never granted any privileges to that role. It needs the following privileges to do its work:
+In the lecture `setup_dlt` we setup a reader and writer role and also an analyst role for the database movies. However we never granted any privileges to that role. It needs the following privileges to do its work:
 
 - read data from tables and views in public schema
 - use dev_wh
