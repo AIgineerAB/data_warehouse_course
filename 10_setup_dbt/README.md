@@ -4,10 +4,10 @@ Video on what is dbt :point_down:
 [![what is dbt?]()](https://youtu.be/mMJKWOg3nS4)
 
 Video on setup role and user in snowflake for dbt :point_down: 
-[![setup dbt part 1 roles]()](https://youtu.be/V2CEc9tCHxM)
+[![setup dbt part 1 roles](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_roles_video.png?raw=true)](https://youtu.be/V2CEc9tCHxM)
 
 Video on setup dbt in vscode :point_down: 
-[![setup dbt part 2 vscode]()](https://youtu.be/IUMdhf_vsMs)
+[![setup dbt part 2 vscode](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_part2_video.png?raw=true)](https://youtu.be/IUMdhf_vsMs)
 
 ## Setup user and role
 
