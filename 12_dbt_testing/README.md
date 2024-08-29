@@ -3,8 +3,9 @@
 <!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
 
 
-> [!IMPORTANT]
-> [LINK TO VIDEO &nbsp; :video_camera:](https://)
+Video on dbt testing (coding) :point_down:
+[![dbt testing code]()]()
+
 
 
 There will be errors along the data pipeline somewhere and sometimes. It can be due to strange input data, some outliers, or something that went wrong in some part in the pipeline. It is thus important for the data team to be the first to capture this error and don't let it propagate to downstream use cases that might base decisions on this data. It could be harmful for the business and the data team might lose its credibility if this happens. 
