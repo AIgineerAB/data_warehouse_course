@@ -4,7 +4,17 @@ Video on dbt theory to transform data :point_down:
 
 [![developing in dbt](https://github.com/kokchun/assets/blob/main/data_warehouse/developing_dbt_video.png?raw=true)](https://youtu.be/PnSL_CPWKxI)
 
+Video on dbt coding to transform data part 1 :point_down:
 [![dbt transformations part 1](https://github.com/kokchun/assets/blob/main/data_warehouse/dbt_transformations_part1.png?raw=true)](https://youtu.be/aiYLvu6h0dM)
+
+Video on dbt coding to transform data part 2 :point_down:
+[![dbt transformations part 2]()](https://youtu.be/HMvYN3Vdvao)
+
+Video on dbt coding to transform data part 3 :point_down:
+[![dbt transformations part 3]()](https://youtu.be/z0G3KoDryww)
+
+
+
 
 Based on our previous dimensional models on the job ads we'll transform the data from staging layer to the warehouse layer. This will be our source of truth, that later will serve the data marts layer, which then in turn serves BI dashboards. We will base our modeling on the ER diagram of a star schema created in `dimension_modeling` lecture.
 
