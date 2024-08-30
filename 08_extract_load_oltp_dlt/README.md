@@ -68,12 +68,12 @@ Then in `secrets.toml` in .dbt, we add the following
 # put your secret values and credentials here. do not share this file and do not push it to github
 
 [sources.sql_database.credentials]
-drivername = "drivername" # please set me up!
-database = "database" # please set me up!
-password = "password" # please set me up!
-username = "username" # please set me up!
-host = "host" # please set me up!
-port = 0 # please set me up!
+drivername = "postgresql+psycopg2" # please set me up!
+database = "amazon" # please set me up!
+password = "amazon_password123" # please set me up!
+username = "amazon" # please set me up!
+host = "localhost" # please set me up!
+port = 5432 # please set me up!
 
 [destination.snowflake.credentials]
 database = "amazon" # please set me up!
@@ -86,6 +86,9 @@ role = "amazon_dlt_role" # please set me up!
 
 > [!NOTE]
 > Remember to setup snowflake database and roles
+
+> [!NOTE]
+> In the python script later, we create the connection string to postgres with the secrets. 
 
 
 
