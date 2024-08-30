@@ -1,7 +1,7 @@
 # Modeling and transformations in warehouse layer
 
 Video on what is dbt :point_down: 
-[![what is dbt?]()](https://youtu.be/mMJKWOg3nS4)
+[![what is dbt?](https://github.com/kokchun/assets/blob/main/data_warehouse/what_is_dbt.png?raw=true)](https://youtu.be/mMJKWOg3nS4)
 
 Video on setup role and user in snowflake for dbt :point_down: 
 [![setup dbt part 1 roles](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_roles_video.png?raw=true)](https://youtu.be/V2CEc9tCHxM)
