@@ -1,10 +1,6 @@
 # Dashboard with streamlit
 
-<!-- [![video](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true)](https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true) -->
-
-
-> [!IMPORTANT]
-> [LINK TO VIDEO &nbsp; :video_camera:](https://)
+[![serving streamlit dashboard job ads](https://github.com/kokchun/assets/blob/main/data_warehouse/streamlit_dashboard_video.png?raw=true)](https://youtu.be/3K85fZ0Ak9o)
 
 
 
