@@ -1,4 +1,4 @@
-# Data warehouse lifecycle - DE23
+# Data warehouse lifecycle course
 
 In this course, you'll dive into the concepts of data warehouse and its lifecycle including
 
