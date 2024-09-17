@@ -5,7 +5,7 @@ Video on dlt theory to extract and load from API to snowflake :point_down:
 [![dlt to extract and load from api to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_api_video.png?raw=true)](https://youtu.be/eohHTUU0RII)
 
 Video on EDA of jobtech API :point_down:
-[![EDA on jobtech API]()](https://youtu.be/HB6Y8eMQ8w0)
+[![EDA on jobtech API](https://github.com/kokchun/assets/blob/main/data_warehouse/EDA_job_ads_video.png?raw=true)](https://youtu.be/HB6Y8eMQ8w0)
 
 Video on roles, user and database setup for jobtech :point_down:
 [![roles, user and database setup](https://github.com/kokchun/assets/blob/main/data_warehouse/roles_jobtech_video.png?raw=true)](https://www.youtube.com/watch?v=EfN1PrpUPyM)
