@@ -20,7 +20,6 @@ ALTER WAREHOUSE COMPUTE_WH
 SET AUTO_SUSPEND = 60; -- to decrease cost 
 
 -- scaling out - horizontal scaling
--- 
 ALTER WAREHOUSE DEMO_WAREHOUSE
 SET MAX_CLUSTER_COUNT = 3;
 

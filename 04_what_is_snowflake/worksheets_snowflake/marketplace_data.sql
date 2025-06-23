@@ -38,7 +38,7 @@ SELECT
     COUNT(*) AS number_organizations
 FROM organization_summary
 GROUP BY country_code
-HAVING country_code IN ('SWE', 'DNK', 'NOR', 'FIN', 'ISL')
+HAVING country_code IN ('SWE', 'DNK', 'NOR', 'FIN', 'ISL') -- where clause cannot be used with aggregate functions
 ORDER BY number_organizations DESC;
 
 -- check organizations in regions in nordic countries
