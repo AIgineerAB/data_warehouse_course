@@ -18,7 +18,7 @@ If you don't know how to work with git, and github, follow this [tutorial series
 Now we will create a [snowflake free trial account](https://signup.snowflake.com/), which can be used for 30 days, with $400 credits.
 
 > [!NOTE]
-> Pick enterprise version.
+> Pick enterprise version, Microsoft Azure and West Europe (Netherlands).
 
 <img width = "400" src="https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true"/>
 
@@ -113,44 +113,36 @@ Inside config file fill in
 
 ```yaml
 [connections.dwh_course] # before this was [connections.example]
-accountname =
+accountname = <ACCOUNT LOCATOR>.west-europe.azure
 username =
 password =
 warehousename = COMPUTE_WH
 ```
 
 > [!NOTE]
-> move on to accountname section to find accountname
+> move on to accountname section to find accountname <br>
 > move on to username section to find username
 
-move on to accountname section
 
 ### accountname
 
-To find your user account follow these steps
+`accountname` is composed of `Account Locator`. `Region` and `Cloud Platform` of your Snowflake account. If you follows our steps above, `Region` is *west-europe* and `Cloud platform` is *azure*. 
 
-1. hover over your account in the bottom left corner
-2. hover over account
-3. hover over your account
-4. click copy account url
-
-<img src="https://github.com/kokchun/assets/blob/d4f34adc4bdec64666ba01d23b309ccd97dfcfeb/data_warehouse/account_url.png?raw=true" width=400/>
-
-5. paste this into user account in .snowsql, but keep only the part that is `<account_identifier>.<region>.azure`
-
-```bash
-https://<account_identifier>.<region>.azure.snowflakecomputing.com
-```
+To find your `Account Locator`:
+- log into your account on Snowflake web interface
+- open the account selector on the left bottom corner
+- click on *View account details* to find your `Account Locator`
+  
 
 ### username
 
 In snowflake go into `admin` and then `users & roles` to find your user.
 
+
 ### Snowflake extension
 
 Now install snowflake extension on vscode by searching for snowflake or use this link: [snowflake extension for vscode](https://marketplace.visualstudio.com/items?itemName=snowflake.snowflake-vsc).
 
-Log into your snowflake account using account_url, username and password
 
 ### Snowsql config path
 
@@ -171,7 +163,7 @@ then add "/config" to the ending of that path.
 > [!IMPORTANT]
 > If you are on **windows**, you might get `c:/Users/...` from `pwd`.
 >  
-> Make sure to remove `c:` so the final path could be something like `/Users/aigineer/.snowsql/config/` 
+> Make sure to remove `c:` so the final path could be something like `/Users/aigineer/.snowsql/config` 
 
 ## Create a github repository
 
@@ -209,7 +201,7 @@ SELECT * FROM CUSTOMER;
 Make sure to have logged in to snowflake through its vscode extension. 
 
 > [!NOTE]
-> You might need to change the language mode to snowflake SQL if it isn't set by defa
+> You might need to change the language mode to snowflake SQL if it isn't set by default
 
 > [!NOTE]
 > Use ctrl+enter or cmd+enter to run each sql statements through snowflake.
