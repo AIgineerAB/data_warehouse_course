@@ -72,7 +72,7 @@ Via Snowsight or Snowflake VSC extension, run the worksheet *setup_database.sql*
 ### Users and roles
 Via Snowsight or Snowflake VSC extension, run the worksheet *setup_user_role.sql*
 
-## Connect dlt to snowflake
+## Extract data with dlt
 
 ### CSV data file
 Start downloading a csv file from Kaggle. We'll be using [Netflix Original Films & IMDB Scores](https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores). Create a data directory and place your csv file there. 
@@ -89,7 +89,7 @@ host = "<account_identifier>" # please set me up!
 warehouse = "dev_wh" 
 role = "movies_dlt_role" 
 ```
-### dlt loading
+### dlt load
 Run the script *load_snowflake.py* and control that the data has been loaded to snowflake. 
 
 ## Other videos :video_camera:

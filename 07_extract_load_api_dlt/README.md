@@ -21,34 +21,33 @@ Read [dlthub documentation for loading data from API](https://dlthub.com/devel/t
 > We will only do simple loading from API and won't go through incremental loading and pagination. Also we won't use API which requires a secret in the lecture, but there will be an exercise on it.
 
 
-## Initalize project 
+## Set up in snowflake
+### Database
+Via Snowsight or Snowflake VSC extension, run the worksheet *setup_database.sql*
 
-Run 
+### Users and roles
+Via Snowsight or Snowflake VSC extension, run the worksheet *setup_user_role.sql*
 
-```bash
-dlt init jobsearch snowflake
-```
+## Extract data with dlt
 
-Fill in `.dlt/secrets.toml`
-
-```toml
-[destination.snowflake.credentials]
-database = "job_ads" # please set me up!
-password = "<your_password>" # please set me up!
-username = "<your_username>" # please set me up!
-host = "<your_host>" # can be found through 
-warehouse = "COMPUTE_WH" # please set me up!
-role = "ACCOUNTADMIN" # please set me up!
-```
-
-
-## Arbetsförmedlingen
+### Arbetsförmedlingen API data
 
 We will be using jobtech API to get ads published in arbetsförmedlingen/platsbanken. Go into [this code examples repository](https://gitlab.com/arbetsformedlingen/job-ads/getting-started-code-examples/code-examples-start-here) to read documentation. 
 
+### dlt's connection to snowflake
+Create a folder *.dlt* and a file *secrets.toml*. The entire *.dlt* folder should be ignored by git. Populate the toml file:
 
-
-## Other videos :video_camera:
+```toml
+[destination.snowflake.credentials]
+database = "job_ads" 
+username = "extract_loader" 
+password = "<password for extract_loader>" # please set me up!
+host = "<account_identifier>" # please set me up!  
+warehouse = "dev_wh" 
+role = "job_ads_dlt_role" 
+```
+### dlt load
+Run the script *load_job_ads.py* and control that the data has been loaded to snowflake. 
 
 
 ## Read more :eyeglasses:
