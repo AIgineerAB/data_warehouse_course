@@ -32,11 +32,8 @@ DELETE ON FUTURE TABLES IN SCHEMA movies.staging TO ROLE movies_dlt_role;
 -- check grants
 SHOW GRANTS ON SCHEMA movies.staging;
 SHOW FUTURE GRANTS IN SCHEMA movies.staging;
-
 SHOW GRANTS TO ROLE movies_dlt_role;
-
 SHOW GRANTS TO USER extract_loader;
-
 
 -- create a reader_role 
 USE ROLE useradmin;

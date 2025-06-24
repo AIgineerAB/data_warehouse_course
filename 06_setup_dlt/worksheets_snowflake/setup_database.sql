@@ -1,8 +1,3 @@
--- to find account_locator_url 
-USE ROLE ORGADMIN;
-
-SHOW ACCOUNTS;
-
 USE ROLE sysadmin;
 
 -- setup database and the staging layer 

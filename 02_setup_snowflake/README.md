@@ -22,7 +22,10 @@ Now we will create a [snowflake free trial account](https://signup.snowflake.com
 
 <img width = "400" src="https://github.com/kokchun/assets/blob/025ae8622a25d5522d11b21108f52f1df9388ea2/data_warehouse/snowflake_free_trial.png?raw=true"/>
 
-<!-- TODO: navigation of snowsight -->
+
+> [!NOTE]
+> It is recommended to set up MFA for all *human* accounts. With MFA, there will be some additional steps in logging into SnowSQL though. 
+
 
 ## SnowSQL setup
 

@@ -81,20 +81,13 @@ Create a data directory and place your csv file there. Then change the script fi
 ```toml
 [destination.snowflake.credentials]
 database = "movies" # please set me up!
-password = "<your_password>" # please set me up!
-username = "<your_username>" # please set me up!
-host = "<your_host>" # can be found through 
+username = "<USERNAME>" # please set me up!
+password = "<PASSWORD>" # please set me up!
+host = "<ACCOUNT IDENTIFIER>" # please set me up!  
 warehouse = "COMPUTE_WH" # please set me up!
 role = "ACCOUNTADMIN" # please set me up!
 ```
 
-> [!NOTE]
-> host can be found through using the role ORGADMIN. Copy `account_locator_url` and remove `https://` and `.snowflakecomputing.com`
-
-```
-USE ROLE ORGADMIN;
-SHOW ACCOUNTS;
-```
 
 Now finally before this will work, you need to setup a database called `movies` and a schema called `staging`. This can be done through sql script, see the script `setup_database.sql`. 
 
