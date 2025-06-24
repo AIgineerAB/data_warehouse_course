@@ -1,6 +1,9 @@
-# Modeling and transformations in warehouse layer
+# Data transformation with dbt
 
 Video on what is dbt :point_down: 
+[![what is dbt?](https://github.com/kokchun/assets/blob/main/data_warehouse/what_is_dbt.png?raw=true)](https://www.youtube.com/watch?v=46-Xwx0NhlY)
+
+Video on dbt theory :point_down: 
 [![what is dbt?](https://github.com/kokchun/assets/blob/main/data_warehouse/what_is_dbt.png?raw=true)](https://youtu.be/mMJKWOg3nS4)
 
 Video on setup role and user in snowflake for dbt :point_down: 
@@ -9,31 +12,81 @@ Video on setup role and user in snowflake for dbt :point_down:
 Video on setup dbt in vscode :point_down: 
 [![setup dbt part 2 vscode](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_part2_video.png?raw=true)](https://youtu.be/IUMdhf_vsMs)
 
-## Setup user and role
 
-We'll setup a user transformer and a role job_ads_dbt_role which will be granted to the transformer. Also we'll setup warehouse schema in job_ads database. See code in `worksheets_snowflake`.
+## What is dbt? 
+
+dbt provides two products: dbt Cloud and dbt Core. Both are data transformation tools. dbt Cloud is a commercial product to deploy dbt projects, while dbt Core is an open-source tool for local development of dbt projects. 
+
+> [!NOTE]
+>We will be working with dbt Core in this course. For simplicity, we will use the term *dbt* to refer to dbt Core.
+
+dbt is used for transforming data from staging to transformed layers in data warehouse. Often, the layers can be schemas or databases. We will be using schemas as layers. 
+
+> [!TIP] 
+>💡Why using dbt for data transformation?
+>- code execution is pushed to the data warehouse, taking advantage of its processing power instead of local computing
+>- there is a broad selection for materialization: tables, views and incremental model etc
+>- a dbt model is just a simple SELECT statement to define the resulting data  
+>- dbt automatically determines execution order based on model dependencies
+>- dbt auto-generates a visual documentation of how data flows through a pipeline: [lineage](https://www.getdbt.com/blog/getting-started-with-data-lineage)
+>- Jinja templating is used for producing dynamic and reusable SQL codes(models)
+>- data testing can be easily customized
+>- etc
+
+
+## Setup in Snowflake
+
+We'll setup a user transformer and a role job_ads_dbt_role which will be granted to the transformer. Also we'll setup warehouse schema in job_ads database. See codes in `worksheets_snowflake`.
+
 
 ## Installation
 
-Activate your venv and install dbt-snowflake
+In your uv virtual environment, install dbt along with snowflake adapter
 
 ```bash
-uv pip install dbt-snowflake
+uv pip install dbt-core dbt-snowflake
 ```
 
-Now run `dbt init dbt_code` and type in your configurations
+## Set up dbt project 💻
 
-Now go to `.dbt/profiles.yml` to see your configurations.
+### Step 1: set up project structure
 
-```bash
-open ~/.dbt/profiles.yml # or use code or notepad depending on whats installed for you
+On command line, initiate a dbt project called, for example, *dbt_code*
+
+```bash 
+dbt init dbt_code
+```
+This will produce 
+- a folder with default subfolders and files called *dbt_code* in your working directory, which sets up the project structure for your dbt project
+- a yaml file called ```profiles.yml``` in a folder ```.dbt``` in your home directory: ```~/.dbt/```
+
+### Step 2: configure connection to data warehouse 
+
+The `profiles.yml` file store connection settings to data warehouse. Update the file as below:
+
+```YAML
+dbt_snowflake: 
+  target: dev 
+  outputs: 
+    dev: 
+      type: snowflake
+      account: <ACCOUNT_IDENTIFIER> # fill in this field
+      user: transformer
+      password: <PASSWORD> # fill in this field
+      role: job_ads_dbt_role
+      database: job_ads
+      warehouse: dev_wh
+      schema: staging
+      client_session_keep_alive: False
 ```
 
-To see that it's correctly configured run in your project dbt_code directory
+Check the connection to data warehouse with the syntax below:
 
-```bash
+```
 dbt debug
 ```
+🚀 If the connection is successfully, you are ready to develop your dbt models that transform data from staging to transformed layers in your chosen data warehouse! 
+
 
 ## dbt power user
 
