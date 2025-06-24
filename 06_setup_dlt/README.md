@@ -57,7 +57,7 @@ source .venv/bin/activate
 You will see a paranthesis around your directory name in the terminal when your venv is activated. Now you can install packages without affecting the global installations. So let's install dlt and ipykernel (used for jupyter notebooks).  
 
 ```bash
-uv pip install "dlt[snowflake]" ipykernel pandas 
+uv pip install "dlt[snowflake]" ipykernel pandas "dlt[parquet]"
 ```
 
 > [!NOTE]
@@ -65,33 +65,32 @@ uv pip install "dlt[snowflake]" ipykernel pandas
 
 Now check that dlt is installed by typing `dlt --version` in your terminal. Also check the other packages using `pip list`. 
 
+## Set up in snowflake
+### Database
+Via Snowsight or Snowflake VSC extension, run the worksheet *setup_database.sql*
+
+### Users and roles
+Via Snowsight or Snowflake VSC extension, run the worksheet *setup_user_role.sql*
 
 ## Connect dlt to snowflake
 
-Start downloading a csv file from Kaggle. We'll be using [Netflix Original Films & IMDB Scores](https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores). 
+### CSV data file
+Start downloading a csv file from Kaggle. We'll be using [Netflix Original Films & IMDB Scores](https://www.kaggle.com/datasets/luiscorter/netflix-original-films-imdb-scores). Create a data directory and place your csv file there. 
 
-Navigate to your code directory and initialize a dlt project by typing 
-
-```bash
-dlt init load_snowflake snowflake
-```
-
-Create a data directory and place your csv file there. Then change the script file according to my code in `load_snowflake.py`. Also go into your .dlt and secrets.toml and setup snowflake connection.
+### dlt's connection to snowflake
+Create a folder *.dlt* and a file *secrets.toml*. The entire *.dlt* folder should be ignored by git. Populate the toml file:
 
 ```toml
 [destination.snowflake.credentials]
-database = "movies" # please set me up!
-username = "<USERNAME>" # please set me up!
-password = "<PASSWORD>" # please set me up!
-host = "<ACCOUNT IDENTIFIER>" # please set me up!  
-warehouse = "COMPUTE_WH" # please set me up!
-role = "ACCOUNTADMIN" # please set me up!
+database = "movies" 
+username = "extract_loader" 
+password = "<password for extract_loader>" # please set me up!
+host = "<account_identifier>" # please set me up!  
+warehouse = "dev_wh" 
+role = "movies_dlt_role" 
 ```
-
-
-Now finally before this will work, you need to setup a database called `movies` and a schema called `staging`. This can be done through sql script, see the script `setup_database.sql`. 
-
-Run the script and control that the data has been loaded to snowflake. 
+### dlt loading
+Run the script *load_snowflake.py* and control that the data has been loaded to snowflake. 
 
 ## Other videos :video_camera:
 
