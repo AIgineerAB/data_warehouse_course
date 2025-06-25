@@ -42,10 +42,10 @@ This plan is an overview of the contents covered in each study week.
 | Study week | Content                                             | Lectures | Exercise   |
 | ---------- | --------------------------------------------------- | -------- | ---------- |
 | 1          | data warehouse, snowflake, snowsight, snowsql       | 00-04    | 0          |
-| 2          | access control, data ingestions, extract, load, dlt | 05-08    | 1          |
-| 3          | dimensional modeling, transformations, dbt,         | 09-12    | 2, project |
-| 4          | dbt continue, testing, streamlit, dashboard,        | 13-14    | project    |
-| 5          | work with project                                   | 15       | project    |
+| 2          | access control, data ingestions, extract, load, dlt | 05-07    | 1          |
+| 3          | dimensional modeling, transformations, dbt,         | 09-11    | 2, project |
+| 4          | dbt continue, testing, streamlit, dashboard,        | 12-14    | project    |
+| 5          | dagster                                   | 15       | project    |
 
 > [!NOTE]
 > The project is only available for students currently enrolling this course. It is found in your course learning management system.
