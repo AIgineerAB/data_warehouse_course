@@ -1,18 +1,11 @@
-{{
-  config(
-    materialized = 'ephemeral',
-    )
-}}
+-- this is an extract of the model
 
+with stg_job_ads as (select * from {{ source('job_ads', 'stg_ads') }})
 
-{# this is upstream from fct_job_ads#}
-WITH stg_job_ads AS (SELECT * FROM {{ source('job_ads', 'stg_data_ads') }}
-)
-
-SELECT
-    id,
-    headline,
-    number_of_vacancies AS vacancies,
+select
+    occupation__label,
+    number_of_vacancies as vacancies,
     relevance,
     application_deadline
-FROM stg_job_ads ORDER BY application_deadline ASC
+from stg_job_ads
+order by application_deadline

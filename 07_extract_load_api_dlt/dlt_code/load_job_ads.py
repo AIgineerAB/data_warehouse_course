@@ -1,3 +1,11 @@
+#========================================#
+#                                        #
+#    This script loads job ads with      #
+#    the keyword "data engineer"         #
+#                                        #
+#========================================#
+
+
 import dlt
 import requests
 import json
