@@ -9,6 +9,21 @@ dbt can generate comprehensive documentation for your data models, which can be 
 - data lineage
 - browser based interface
 
+## Document column description
+Add description for a column in *schema.yml* under *models* directory:
+
+```yml
+models:
+
+  - name: dim_occupation
+    description: "The dimension is a collection of unique occupation"
+
+  - name: fct_job_ads
+    description: "The facts are relevance and vacancies."
+```
+
+## Generate documentation
+
 Generate the documentation with 
 
 ```bash
@@ -20,7 +35,6 @@ then serve it to a local webserver with
 ```bash
 dbt docs serve
 ```
-
 
 
 ## Other videos :video_camera:
