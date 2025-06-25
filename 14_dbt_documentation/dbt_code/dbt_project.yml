@@ -6,7 +6,7 @@ name: 'dbt_code'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'dbt_code'
+profile: "dbt_snowflake"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -17,8 +17,6 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-asset-paths: ["assets"]
-docs-paths: ["docs"]
 
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
@@ -33,20 +31,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_code:
-    +materialized: view
+    +materialized: table
 
     src:
       +materialized: ephemeral
+      +schema: staging
+
+    dim:
       +schema: warehouse
 
-    dim: 
-      +schema: warehouse
-      
-    fct: 
+    fct:
       +schema: warehouse
 
-    mart: 
+    mart:
       +schema: marts
-
-
-    
