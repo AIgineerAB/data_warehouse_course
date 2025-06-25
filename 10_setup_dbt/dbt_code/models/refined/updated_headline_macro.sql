@@ -1,7 +1,7 @@
 WITH staging_data AS (
     SELECT 
         *
-    FROM {{ ref('staging_data') }})
+    FROM {{ ref('original_headline') }})
 
 SELECT 
     {{ translate_headline('headline') }} AS updated_job_title

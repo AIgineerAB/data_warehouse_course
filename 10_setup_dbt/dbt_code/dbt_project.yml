@@ -26,8 +26,8 @@ models:
   dbt_code:
     staging:
       schema: staging
-      materialized: view
+      materialized: table
     refined: 
-      schema: refined
-      materialized: view
+      schema: warehouse
+      materialized: table
 

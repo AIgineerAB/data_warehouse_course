@@ -47,7 +47,7 @@ In your uv virtual environment, install dbt along with snowflake adapter
 uv pip install dbt-core dbt-snowflake
 ```
 
-## Set up dbt project 💻
+## Set up dbt project
 
 ### Step 1: set up project structure
 
@@ -78,6 +78,13 @@ dbt_snowflake:
       warehouse: dev_wh
       schema: staging
       client_session_keep_alive: False
+```
+
+Then in `dbt_project.yml` in the dbt project directory, update which profile should be used for this project:
+
+```YAML
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_snowflake'
 ```
 
 Check the connection to data warehouse with the syntax below:
