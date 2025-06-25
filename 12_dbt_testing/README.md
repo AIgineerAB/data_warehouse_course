@@ -25,6 +25,27 @@ packages:
 
 Now run `dbt deps` to install the dependencies.
 
+## Generic data tests
+
+Generic data tests are built-in tests in dbt. With the package `dbt_expectation`, there are more choices of built-in tests for use. An alternative is to write your own singular data tests (.sql files) under *test* directory. For generic data tests, add a file called *schema.yml* under the *models* directory as below:
+
+```yml
+models:
+
+  - name: fct_job_ads
+    columns:
+      - name: occupation_id
+        data_tests:
+          - relationships:
+              to: ref('dim_occupation')
+              field: occupation_id
+```
+
+Check out the *schema.yml* file for more examples of tests. Run the tests with 
+
+```
+dbt test
+```
 
 ## Other videos :video_camera:
 

@@ -1,36 +1,12 @@
 models:
-  - name: dim_employer
-    columns:
-      - name: employer_id
-        data_tests:
-          - unique
-          - not_null
-
-      - name: workplace_city
-        data_tests:
-          - not_null
-
-        # TODO: add more tests ...
-
-  - name: dim_job_details
-    columns:
-      - name: job_details_id
-        data_tests:
-          - not_null
-          - unique
-      - name: headline
-        data_tests:
-          - not_null
-
-        # TODO: add more tests ...
 
   - name: fct_job_ads
     columns:
-      - name: job_details_key
+      - name: occupation_id
         data_tests:
           - relationships:
-              to: ref('dim_job_details')
-              field: job_details_id
+              to: ref('dim_occupation')
+              field: occupation_id
       - name: relevance
         data_tests:
           - dbt_expectations.expect_column_values_to_be_between:
