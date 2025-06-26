@@ -20,7 +20,7 @@ def _get_ads(url_for_search, params):
 
 
 @dlt.resource(write_disposition="replace")
-def jobsearch_resource(params):
+def jobads_resource(params):
 
     url = "https://jobsearch.api.jobtechdev.se"
     url_for_search = f"{url}/search"
@@ -38,7 +38,7 @@ def run_pipeline(table_name):
 
     params = {"limit": 100, "occupation-field": "6Hq3_tKo_V57"}
 
-    load_info = pipeline.run(jobsearch_resource(params=params), table_name=table_name)
+    load_info = pipeline.run(jobads_resource(params=params), table_name=table_name)
     print(load_info)
 
 
