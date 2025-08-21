@@ -29,7 +29,7 @@ We will now do some exploratory data analysis (EDA) of this dataset.
 
 &nbsp; h) Let's dive into what swedish people are searching. Go into [worldbanks country codes](https://wits.worldbank.org/wits/wits/witshelp/content/codes/country_codes.htm) to find out the country code for Sweden. Find the 20 most popular keywords and the number of searches of that keyword.
 
-&nbsp; i) Lets see how popular spotify is around the world. List the top 10 number countries and the number of searches for spotify. For now it's okay to list the country codes, later we'll join this with the actual country to get more useful information to the stakeholders.
+&nbsp; i) Lets see how popular spotify is around the world. List the top 10 number countries and the number of searches for spotify. 
 
 &nbsp; j) Feel free to do additional explorations of this dataset.
 
@@ -77,8 +77,6 @@ Fill in this table either by copying this into your own markdown file or copy it
 | upstream          |             |
 | data warehouse    |             |
 | cloud computing   |             |
-| modern data stack |             |
-| idempotent        |             |
 | OLAP              |             |
 | OLTP              |             |
 | virtual warehouse |             |
@@ -88,7 +86,6 @@ Fill in this table either by copying this into your own markdown file or copy it
 | scaling up        |             |
 | snowflake credit  |             |
 | securable object  |             |
-| snowflake object  |             |
 | schema            |             |
 | permanent table   |             |
 | transient table   |             |
