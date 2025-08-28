@@ -61,4 +61,10 @@ SELECT * FROM customers;
 INSERT INTO customers (customer_name, email) VALUES
 ('John Doe2', 'john.doe@example.com');
 
+-- VSC snowflake extension by default enables the use of secondary roles, so check below if there are any active secondary roles
+SELECT CURRENT_SECONDARY_ROLES();
+
 SELECT * FROM transactions;
+
+
+
