@@ -4,7 +4,15 @@ Video on snowflake users and roles theory :point_down:
 [![example of access control](https://github.com/kokchun/assets/blob/main/data_warehouse/access_control_video.png?raw=true)](https://youtu.be/NZlaNhDUqOE)
 
 Video on roles coding part :point_down:. Here we set up the database as well as roles. Then populate the database using correct roles. 
-[![code showing roles and privileges](https://github.com/kokchun/assets/blob/main/data_warehouse/roles_code_video.png?raw=true)](https://www.youtube.com/watch?v=TrLrobmqzKQ)
+
+<a href="https://youtu.be/MAMW3cUWQrs" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/data_warehouse/rbac.png?raw=true" alt="pydantic for data validation" width="600">
+</a>
+
+
+
+
+
 
 
 
@@ -18,6 +26,9 @@ The content is based on the documentation on [access control.](https://docs.snow
 - principle of least privilege - minimum lvl access to perform its duties
 
 ## Other videos :video_camera:
+
+Archived
+- [![code showing roles and privileges](https://github.com/kokchun/assets/blob/main/data_warehouse/roles_code_video.png?raw=true)](https://www.youtube.com/watch?v=TrLrobmqzKQ)
 
 - [Data warehouse security w/ 4 simple roles - Kahan data solutions (2024)](https://www.youtube.com/watch?v=XUFdbyb49B8)
 - [Understanding access control & roles in snowflake - Kahan data solutions (2021)](https://www.youtube.com/watch?v=b-YRXJgjDC8)
