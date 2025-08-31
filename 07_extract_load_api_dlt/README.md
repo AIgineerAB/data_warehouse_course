@@ -4,14 +4,15 @@ Video on dlt theory to extract and load from API to snowflake :point_down:
 
 [![dlt to extract and load from api to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_api_video.png?raw=true)](https://youtu.be/eohHTUU0RII)
 
-Video on EDA of jobtech API :point_down:
-[![EDA on jobtech API](https://github.com/kokchun/assets/blob/main/data_warehouse/EDA_job_ads_video.png?raw=true)](https://youtu.be/HB6Y8eMQ8w0)
 
-Video on roles, user and database setup for jobtech :point_down:
-[![roles, user and database setup](https://github.com/kokchun/assets/blob/main/data_warehouse/roles_jobtech_video.png?raw=true)](https://www.youtube.com/watch?v=EfN1PrpUPyM)
+Coding part
 
-Video on extract and loading data from jobtech API to snowflake with dlt :point_down:
-[![extract and load data from dlt to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_jobtech_video.png?raw=true)](https://www.youtube.com/watch?v=PEmcikWd93o)
+<a href="https://youtu.be/5fur2ZTonDQ" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_api_snowflake.png?raw=true" alt="dlt for EL api to snowflake" width="600">
+</a>
+
+
+
 
 
 
@@ -48,6 +49,19 @@ role = "job_ads_dlt_role"
 ```
 ### dlt load
 Run the script *load_job_ads.py* and control that the data has been loaded to snowflake. 
+
+
+## Other videos
+
+**Archived**
+Video on EDA of jobtech API :point_down:
+[![EDA on jobtech API](https://github.com/kokchun/assets/blob/main/data_warehouse/EDA_job_ads_video.png?raw=true)](https://youtu.be/HB6Y8eMQ8w0)
+
+Video on roles, user and database setup for jobtech :point_down:
+[![roles, user and database setup](https://github.com/kokchun/assets/blob/main/data_warehouse/roles_jobtech_video.png?raw=true)](https://www.youtube.com/watch?v=EfN1PrpUPyM)
+
+Video on extract and loading data from jobtech API to snowflake with dlt :point_down:
+[![extract and load data from dlt to snowflake](https://github.com/kokchun/assets/blob/main/data_warehouse/dlt_jobtech_video.png?raw=true)](https://www.youtube.com/watch?v=PEmcikWd93o)
 
 
 ## Read more :eyeglasses:
