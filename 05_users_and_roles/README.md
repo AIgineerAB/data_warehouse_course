@@ -6,7 +6,7 @@ Video on snowflake users and roles theory :point_down:
 Video on roles coding part :point_down:. Here we set up the database as well as roles. Then populate the database using correct roles. 
 
 <a href="https://youtu.be/MAMW3cUWQrs" target="_blank">
-  <img src="https://github.com/kokchun/assets/blob/main/data_warehouse/rbac.png?raw=true" alt="pydantic for data validation" width="600">
+  <img src="https://github.com/kokchun/assets/blob/main/data_warehouse/rbac.png?raw=true" alt="pydantic for data validation" width="1000">
 </a>
 
 

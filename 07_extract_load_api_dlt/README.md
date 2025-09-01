@@ -8,7 +8,7 @@ Video on dlt theory to extract and load from API to snowflake :point_down:
 Coding part
 
 <a href="https://youtu.be/5fur2ZTonDQ" target="_blank">
-  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_api_snowflake.png?raw=true" alt="dlt for EL api to snowflake" width="600">
+  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_api_snowflake.png?raw=true" alt="dlt for EL api to snowflake" width="1000">
 </a>
 
 
