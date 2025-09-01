@@ -8,7 +8,7 @@ Video on dlt theory :point_down:
 Video on dlt to extract and load csv into snowflake :point_down:
 
 <a href="https://youtu.be/3zrs7CBPjaE" target="_blank">
-  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_csv_snowflake.png?raw=true" alt="dlt for EL csv to snowflake" width="600">
+  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dlt_csv_snowflake.png?raw=true" alt="dlt for EL csv to snowflake" width="1000">
 </a>
 
 This setup requires that you have the following prerequisites already setup
