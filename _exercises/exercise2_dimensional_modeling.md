@@ -38,25 +38,7 @@ In this task you will work with [ice cream dataset from kaggle](https://www.kagg
 &nbsp; d) Use dbt to make the transformations into the warehouse layer.
 
 
-## 2. Theory questions
-
-&nbsp; a) Why should you use surrogate keys in dimensional and fact tables?
-
-&nbsp; b) How do you model to associate a fact table with its dimensions?
-
-&nbsp; c) Why is it not good to anticipate business requirements through preslicing and dicing the data?
-
-&nbsp; d) Give examples of facts that are additive, semi-additive and non-additive.
-
-&nbsp; e) Which SCD is most commonly used and how does it work?
-
-&nbsp; f) What is the purpose of a date dimension?
-
-&nbsp; g) Why should you create an ephemeral materialization in dbt?
-
-&nbsp; h)
-
-## 3. Glossary
+## 2. Glossary
 
 Fill in this table either by copying this into your own markdown file or copy it into a spreadsheet if you feel that is easier to work with.
 
@@ -66,8 +48,6 @@ Fill in this table either by copying this into your own markdown file or copy it
 | fact                       |             |
 | dimensions                 |             |
 | star schema                |             |
-| conformed dimension        |             |
-| slowly changing dimensions |             |
 | business process           |             |
 | data mart                  |             |
 | snowflake schema           |             |
@@ -77,18 +57,6 @@ Fill in this table either by copying this into your own markdown file or copy it
 | foreign key                |             |
 | primary key                |             |
 | surrogate key              |             |
-| foreign key relationship   |             |
 | natural key                |             |
-| transformation             |             |
-| materialization            |             |
-| role playing dimensions    |             |
-| degenerate dimension       |             |
-| factless fact table        |             |
-| data quality               |             |
-| data integrity             |             |
-| inlining SQL               |             |
-| ephemeral model            |             |
-|                            |             |
-|                            |             |
 
-<!-- data quality and down - move to dbt exercise? -->
+
