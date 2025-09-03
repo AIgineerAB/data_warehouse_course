@@ -29,8 +29,6 @@ Video on dimensional modeling and building a star schema in dbdiagram :point_dow
 
 Video on dimensional modeling for the job ads :point_down:
 
-[![dimensional model of job ads](https://github.com/kokchun/assets/blob/main/data_warehouse/jobtech_dimensional_model.png?raw=true)](https://youtu.be/E88-G-uDxnQ)
-
 >[!Note]
 >In the following lectures, in the fct_job_ads table, we will be using the following names for foreign keys:
 >- occupation_id
@@ -39,6 +37,8 @@ Video on dimensional modeling for the job ads :point_down:
 >- auxiliary_attributes_id <BR>
 >
 >Also, we will omit job_id but job_id is not needed in downstream data transformation. 
+
+[![dimensional model of job ads](https://github.com/kokchun/assets/blob/main/data_warehouse/jobtech_dimensional_model.png?raw=true)](https://youtu.be/E88-G-uDxnQ)
 
 
 Start by setting up a [free account in dbdiagram](https://dbdiagram.io/home). We will use dbdiagram to do data modeling and more specifically dimensional modeling. 

@@ -1,19 +1,11 @@
 # Data transformation with dbt
 
-Video on what is dbt :point_down: 
-[![what is dbt?](https://github.com/kokchun/assets/blob/main/data_warehouse/what_is_dbt.png?raw=true)](https://www.youtube.com/watch?v=46-Xwx0NhlY)
+## What is dbt? 
 
-Video on dbt theory :point_down: 
+Video on what is dbt :point_down: 
+
 [![what is dbt?](https://github.com/kokchun/assets/blob/main/data_warehouse/what_is_dbt.png?raw=true)](https://youtu.be/mMJKWOg3nS4)
 
-Video on setup role and user in snowflake for dbt :point_down: 
-[![setup dbt part 1 roles](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_roles_video.png?raw=true)](https://youtu.be/V2CEc9tCHxM)
-
-Video on setup dbt in vscode :point_down: 
-[![setup dbt part 2 vscode](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_part2_video.png?raw=true)](https://youtu.be/IUMdhf_vsMs)
-
-
-## What is dbt? 
 
 dbt provides two products: dbt Cloud and dbt Core. Both are data transformation tools. dbt Cloud is a commercial product to deploy dbt projects, while dbt Core is an open-source tool for local development of dbt projects. 
 
@@ -34,9 +26,14 @@ dbt is used for transforming data from staging to transformed layers in data war
 >- etc
 
 
+
 ## Setup in Snowflake
 
 We'll setup a user transformer and a role job_ads_dbt_role which will be granted to the transformer. Also we'll setup warehouse schema in job_ads database. See codes in `worksheets_snowflake`.
+
+Video on setup role and user in snowflake for dbt :point_down: 
+
+[![setup dbt part 1 roles](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_roles_video.png?raw=true)](https://youtu.be/V2CEc9tCHxM)
 
 
 ## Installation
@@ -48,6 +45,22 @@ uv pip install dbt-core dbt-snowflake
 ```
 
 ## Set up dbt project
+
+Video on setup dbt in vscode :point_down: 
+
+>[!Note]
+>In the video, we are running the below because in the past `dbt-core` will be installed automatically,
+>```cmd
+>uv pip install dbt-snowflake
+>```
+>Now dbt requires users to install `dbt-core` explicitly, therefore, you should run the below instead:
+>```cmd
+>uv pip install dbt-core dbt-snowflake
+>```
+
+
+[![setup dbt part 2 vscode](https://github.com/kokchun/assets/blob/main/data_warehouse/setup_dbt_part2_video.png?raw=true)](https://youtu.be/IUMdhf_vsMs)
+
 
 ### Step 1: set up project structure
 
@@ -94,8 +107,7 @@ dbt debug
 ```
 🚀 If the connection is successfully, you are ready to develop your dbt models that transform data from staging to transformed layers in your chosen data warehouse! 
 
-
-## dbt power user
+## Extra set up - dbt power user
 
 Download dbt power user from vscode extensions, which will aid a lot in dbt development.
 
@@ -108,7 +120,7 @@ Go into `settings.json` through shift+ctrl+p (windows) or shift+cmd+p (mac) and 
 },
 ```
 
-## dbt_utils
+## Extra set up - dbt_utils
 
 We'll also be using a[ package called dbt_utils](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/), which have several utility functions, macros that can be used. Create a file in the root project folder called `packages.yml` 
 
@@ -124,6 +136,10 @@ packages:
 ```
 
 then run `dbt deps` to install the dependencies specified in packages.yml
+
+## Extra set up - generate_schema_name.sql macro
+
+Copy the macro file called generate_schema_name.sql under *dbt_code/macros* from the course repo and paste it accordingly to your own repo. This file is needed so that we can use our chosen schema names when dbt is creating new tables and views in the database. 
 
 ## Overview of a dbt project
 
