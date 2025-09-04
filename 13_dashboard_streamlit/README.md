@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-uv pip install streamlit snowflake-connector-python
+uv pip install dotenv streamlit snowflake-connector-python
 ```
 
 ## Set up user and role in Snowflake
