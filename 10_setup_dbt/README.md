@@ -100,7 +100,7 @@ Then in `dbt_project.yml` in the dbt project directory, update which profile sho
 profile: 'dbt_snowflake'
 ```
 
-Check the connection to data warehouse with the syntax below:
+Check the connection to data warehouse with the syntax below. Navigate to the dbt project directory `dbt_code` and run:
 
 ```
 dbt debug
@@ -109,7 +109,7 @@ dbt debug
 
 ## Extra set up - dbt power user
 
-Download dbt power user from vscode extensions, which will aid a lot in dbt development.
+Download dbt power user from vscode extensions, which will aid a lot in dbt development. This will allow previewing the resulting transformation in the data warehouse before running dbt.
 
 Go into `settings.json` through shift+ctrl+p (windows) or shift+cmd+p (mac) and update the following:
 
