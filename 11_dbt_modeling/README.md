@@ -2,6 +2,8 @@
 
 In this lecture, we will transform data with dbt according to a dimensional model which is usually provided to the data engineer team as the blueprint of coding dbt models.
 
+Video on dbt modeling :point_down:
+
 <a href="https://youtu.be/aYGcrrFshrs" target="_blank">
   <img src="https://github.com/kokchun/assets/blob/main/data_engineering/dbt_model_snowflake.png?raw=true" alt="dbt modeling snowflake" width="1000">
 </a>
@@ -45,7 +47,20 @@ Then run `dbt deps` to install the dependencies specified in packages.yml
 
 ### dbt models
 
-Now you can run all dbt models and check if the resulting data in Snowflake. Note that only an extract of models are provided in this repo
+Now you can run all dbt models and check if the resulting data in Snowflake. *Note that only an extract of models are provided in this repo.*
+
+In *fct_job_ads* model, you can use the codes below to generate the surrogate keys for joining the fact model with dimension models:
+
+```sql
+{{ dbt_utils.generate_surrogate_key(['occupation__label']) }} as occupation_id,
+
+{{ dbt_utils.generate_surrogate_key(['employer__workplace', 'workplace_address__municipality']) }}
+as employer_id,
+
+{{ dbt_utils.generate_surrogate_key(['id']) }} as job_details_id,
+
+{{ dbt_utils.generate_surrogate_key(['id']) }} as auxilliary_attributes_id,
+```
 
 ## Other videos :video_camera:
 
