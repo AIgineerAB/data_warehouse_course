@@ -4,7 +4,8 @@
 #                      #
 # ==================== #
 # this file is used for running dagster locally
-# this file is loaded directly as code location
+# here we create a single file as a dagster script
+# alternatively, one can create a package for your dagster scripts
 
 from pathlib import Path
 import dlt
@@ -12,7 +13,8 @@ import dagster as dg
 from dagster_dlt import DagsterDltResource, dlt_assets
 from dagster_dbt import DbtCliResource, DbtProject, dbt_assets
 
-# to import dlt script
+# to import dlt script from another folder outside the orchestration folder
+# this part is not needed if you create a package for your dagster scripts
 import sys
 sys.path.insert(0, '../data_extract_load')
 from load_job_ads import jobads_source
@@ -23,10 +25,13 @@ from load_job_ads import jobads_source
 #       dlt Asset      #
 #                      #
 # ==================== #
-# requires secrets.toml for snowflake connection
+# the creation requires a local secrets.toml for snowflake connection 
+# pipeline definition is moved here
 
+# an instance from the dlt resource class to run dlt codes
 dlt_resource = DagsterDltResource() 
 
+# create dlt asset 
 @dlt_assets(
     dlt_source = jobads_source(),
     dlt_pipeline = dlt.pipeline(
@@ -35,6 +40,8 @@ dlt_resource = DagsterDltResource()
         destination="snowflake",
     ),
 )
+# note the use of dependency injection so that dagster framework constructs instances 
+# of necessary classes needed to produce the asset: one for meta data, another for running dlt codes
 def dlt_load(context: dg.AssetExecutionContext, dlt: DagsterDltResource): 
     yield from dlt.run(context=context) 
 
@@ -45,24 +52,29 @@ def dlt_load(context: dg.AssetExecutionContext, dlt: DagsterDltResource):
 #                      #
 # ==================== #
 # this dbt asset needs dbt_packages pre-installed by 'dbp deps'
+# note the update in schema.yml
 
 # Points to the dbt project path
 dbt_project_directory = Path(__file__).parents[1] / "data_transformation"
 # Define the path to your profiles.yml file (in your home directory)
 profiles_dir = Path.home() / ".dbt"  
+
+# instance of DbtProject with all necessary paths
 dbt_project = DbtProject(project_dir=dbt_project_directory,
                          profiles_dir=profiles_dir)
 
-# References the dbt project object
+# an instance from the dbt resource class to run dbt codes
 dbt_resource = DbtCliResource(project_dir=dbt_project)
 
-# Compiles the dbt project & allow Dagster to build an asset graph
+# produce the manifest file
+# the manifest file let dagster understand the dependency between models
 dbt_project.prepare_if_dev()
 
-# Yields Dagster events streamed from the dbt CLI
-@dbt_assets(manifest=dbt_project.manifest_path,) #access metadata of dbt project so that dagster understand structure of the dbt project
+# create dbt asset
+@dbt_assets(manifest=dbt_project.manifest_path,) # path to the dbt manifest.json
+# note the dependency injection similar to that in dlt asset
 def dbt_models(context: dg.AssetExecutionContext, dbt: DbtCliResource):
-    yield from dbt.cli(["build"], context=context).stream() #compile the project and collect all results
+    yield from dbt.cli(["build"], context=context).stream() # stream() is for showing the progress realtime in dagster UI
 
 
 # ==================== #
