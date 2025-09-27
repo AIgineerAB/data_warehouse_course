@@ -43,6 +43,8 @@ dlt_resource = DagsterDltResource()
 # note the use of dependency injection so that dagster framework constructs instances 
 # of necessary classes needed to produce the asset: one for meta data, another for running dlt codes
 def dlt_load(context: dg.AssetExecutionContext, dlt: DagsterDltResource): 
+    # passes values from dlt.run directly to dagster one at a time
+    # -> asset stream data from dlt pipeline to dagster
     yield from dlt.run(context=context) 
 
 
@@ -65,6 +67,7 @@ dbt_project = DbtProject(project_dir=dbt_project_directory,
 
 # an instance from the dbt resource class to run dbt codes
 dbt_resource = DbtCliResource(project_dir=dbt_project)
+
 
 # produce the manifest file
 # the manifest file let dagster understand the dependency between models

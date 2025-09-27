@@ -1,6 +1,14 @@
 # Data Orchestration with dagster
 
 
+<a href="https://youtu.be/CGfrmZcfXJE" target="_blank">
+  <img src="https://github.com/kokchun/assets/blob/main/data_engineering/mds_dagster.png?raw=true" alt="dbt modeling snowflake" width="1000">
+</a>
+
+
+
+
+
 ## What is dagster? 
 - data orchestrator 
 - automate data pipeline
